@@ -1,0 +1,1 @@
+export { questionnaireResult } from './result';

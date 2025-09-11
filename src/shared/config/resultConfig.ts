@@ -1,0 +1,1 @@
+export const keys = ["decline", "accepted", "junior"];
