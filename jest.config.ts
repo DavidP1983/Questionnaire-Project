@@ -7,6 +7,7 @@ const config: Config = {
     transform: {
         '^.+\\.tsx?$': 'ts-jest'
     },
+    maxWorkers: "50%",
     moduleDirectories: ['src', 'node_modules'],
     moduleNameMapper: {
         '\\.(gif|ttf|eot|svg|jpg|png)$': '<rootDir>/test/mocks/fileMock.js',

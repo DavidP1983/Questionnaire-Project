@@ -12,9 +12,6 @@
     "test:unit": "jest --ci",
     "test:changed": "jest --ci --changedSince=origin/main"
   },
-  "jest": {
-    "maxWorkers": "50%"
-  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "antd": "^5.27.1",
