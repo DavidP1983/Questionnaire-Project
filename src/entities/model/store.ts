@@ -21,7 +21,7 @@ interface IStore {
     backToMainPage: () => void;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 export const useFormState = create<IStore>()(persist(devtools((set, get) => ({
     radioValue: '',
     question: 'who',
@@ -72,7 +72,7 @@ export const useFormState = create<IStore>()(persist(devtools((set, get) => ({
             radioValue: ''
         },
             false, {
-                type: "backToMainPage", payload: {}
+            type: "backToMainPage", payload: {}
         })
     }
 }), { store: "formState", enabled: process.env.NODE_ENV === 'development' }), { name: 'useFormState', version: 1 }))
